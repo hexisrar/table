@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      body {
+        background: #2a9b33;
+        background: linear-gradient(
+          90deg,
+          rgba(42, 155, 51, 0.66) 0%,
+          rgba(173, 199, 87, 0.48) 54%,
+          rgba(214, 83, 237, 0.38) 100%
+        );
+        color: darkolivegreen;
+      }
+      input,
+      select,
+      button {
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        color: darkolivegreen;
+      }
+
+      button {
+        padding: 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <table cellpadding="5" cellspacing="0">
+      <h1>Contact Form</h1>
+
+      <form>
+        <tr>
+          <td><label>Name:</label></td>
+          <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+          <td><label>Email:</label></td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td><label>Message:</label></td>
+          <td><textarea rows="4" cols="40"></textarea></td>
+        </tr>
+
+        <tr>
+          <td><label>Subject:</label></td>
+          <td>
+            <select>
+              <option>Product Inquiry</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit">Send</button></td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
